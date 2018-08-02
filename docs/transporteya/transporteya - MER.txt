@@ -1,0 +1,30 @@
+*	Region: lista de las regiones de Chile.
+
+*	Provincia: lista de provincias de Chile, relacionadas con la región a la que pertenece cada una.
+
+*	Comuna: lista de comunas de chile, relacionadas con la provincia a la que pertenece.
+
+*	Pedido: lista de solicitudes de transporte registrada por los clientes. Esta relacionada con comuna 2 veces, la primera para la comuna de origen del pedido y la segunda para la comuna de destino donde se realizara la entrega. Las coordenadas deben ser opcionales.
+
+*	Oferta: lista de ofertas realizadas por un cliente tipo empresa para cada una de los pedidos disponibles. Las coordenadas deben acttualizarce periodicamente tomando los datos del dispositivo donde se encuentre el transporte.
+
+*	Cliente: lista de clientes. ya sean empresas o clientes normales. Deberan realizarse 2 modelos para los formularios de registro:
+		-	Para clientes normales (todos los datos).
+		-	Para clientes tipo empresa:
+				rut 
+				nombre 
+				contraseña 
+				direccion
+				comuna
+				Región 
+				telefono
+				Correo.
+
+	En ambos modelos hay que tener el email y el username como claves unicas.
+
+
+Data para las tablas Región, Provincia y Comuna: http://cesarg.cl/tablas-de-region-provincias-y-comunas-de-chile/
+
+Los estados de los pedidos seran estaticos
+
+La bandera "activo" de la tabla clientes es para indicar si el usuario esta activo o inactivo.
